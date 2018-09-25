@@ -1,10 +1,13 @@
 //: control/WhileTest.java
+package control; /* Added by Eclipse.py */
 // Demonstrates the while loop.
 
 public class WhileTest {
+  static int count;
   static boolean condition() {
-    boolean result = Math.random() < 0.99;
-    System.out.print(result + ", ");
+    double random= Math.random();
+    boolean result = random < 0.99;
+    System.out.print((count++) + ": " + random + " " + result + ", ");
     return result;
   }
   public static void main(String[] args) {
