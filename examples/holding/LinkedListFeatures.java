@@ -39,12 +39,15 @@ pets.getFirst(): Rat
 pets.element(): Rat
 pets.peek(): Rat
 pets.remove(): Rat
+[Manx, Cymric, Mutt, Pug]
 pets.removeFirst(): Manx
+[Cymric, Mutt, Pug]
 pets.poll(): Cymric
 [Mutt, Pug]
-After addFirst(): [Rat, Mutt, Pug]
-After offer(): [Rat, Mutt, Pug, Cymric]
-After add(): [Rat, Mutt, Pug, Cymric, Pug]
-After addLast(): [Rat, Mutt, Pug, Cymric, Pug, Hamster]
+After addFirst(new Rat()): [Rat, Mutt, Pug]
+After offer(Pets.randomPet()): [Rat, Mutt, Pug, Cymric]
+After add(Pets.randomPet()): [Rat, Mutt, Pug, Cymric, Pug]
+After addLast(new Hamster()): [Rat, Mutt, Pug, Cymric, Pug, Hamster]
 pets.removeLast(): Hamster
+[Rat, Mutt, Pug, Cymric, Pug]
 *///:~
