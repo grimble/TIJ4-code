@@ -16,19 +16,22 @@ public class LinkedListFeatures {
     print("pets.peek(): " + pets.peek());
     // Identical; remove and return the first element:
     print("pets.remove(): " + pets.remove());
+    print(pets);
     print("pets.removeFirst(): " + pets.removeFirst());
+    print(pets);
     // Only differs in empty-list behavior:
     print("pets.poll(): " + pets.poll());
     print(pets);
     pets.addFirst(new Rat());
-    print("After addFirst(): " + pets);
+    print("After addFirst(new Rat()): " + pets);
     pets.offer(Pets.randomPet());
-    print("After offer(): " + pets);
+    print("After offer(Pets.randomPet()): " + pets);
     pets.add(Pets.randomPet());
-    print("After add(): " + pets);
+    print("After add(Pets.randomPet()): " + pets);
     pets.addLast(new Hamster());
-    print("After addLast(): " + pets);
+    print("After addLast(new Hamster()): " + pets);
     print("pets.removeLast(): " + pets.removeLast());
+    print(pets);
   }
 } /* Output:
 [Rat, Manx, Cymric, Mutt, Pug]
