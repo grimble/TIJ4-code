@@ -12,7 +12,7 @@ implements Generator<Coffee>, Iterable<Coffee> {
   public CoffeeGenerator() {}
   // For iteration:
   private int size = 0;
-  public CoffeeGenerator(int sz) { size = sz; }	
+  public CoffeeGenerator(int sz) { size = sz; }
   public Coffee next() {
     try {
       return (Coffee)
@@ -32,7 +32,7 @@ implements Generator<Coffee>, Iterable<Coffee> {
     public void remove() { // Not implemented
       throw new UnsupportedOperationException();
     }
-  };	
+  };
   public Iterator<Coffee> iterator() {
     return new CoffeeIterator();
   }
