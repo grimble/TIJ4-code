@@ -7,5 +7,5 @@ public abstract class Test<C> {
   public Test(String name) { this.name = name; }
   // Override this method for different tests.
   // Returns actual number of repetitions of test.
-  abstract int test(C container, TestParam tp);
+  abstract public int test(C container, TestParam tp);
 } ///:~
