@@ -9,6 +9,11 @@ import java.util.*;
 
 public class Person {
   private String first, last;
+
+  public Person() {
+    this("", "");
+  }
+
   public Person(String first, String last) {
     this.first = first;
     this.last = last;
